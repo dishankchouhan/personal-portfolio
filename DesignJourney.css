@@ -1,0 +1,1104 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f9fafb;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background: white;
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #333;
+}
+
+.back-link i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.live-site-link {
+  display: flex;
+  align-items: center;
+  /* background: #667eea; */
+  background: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.live-site-link:hover {
+  /* background: #5a67d8; */
+  /* background: linear-gradient(to right, #ff8177 10%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+  transform: translateY(-2px);
+  color: white;
+}
+
+.external-link-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.case-study-badge {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    padding: 5rem 2.5rem;
+    background: linear-gradient(135deg, #fef3c7, #fed7aa, #fecaca);
+    color: #1f2937;
+}
+
+.intro-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+}
+
+.intro-subtitle {
+    font-size: 1.25rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Hero Image Section */
+.hero-image-section {
+    background: white;
+    padding: 4rem 2.5rem;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Journey Details */
+.journey-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2.5rem;
+    background: #f9fafb;
+}
+
+.detail-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-4px);
+}
+
+.detail-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.detail-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+}
+
+.detail-title {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4b5563;
+}
+
+.detail-content {
+    color: #1f2937;
+    line-height: 1.5;
+}
+
+/* Tools Section */
+.tools-section {
+    background: white;
+    padding: 4rem 2.5rem;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+    color: #1f2937;
+}
+
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tool-tag {
+    background: #f9fafb;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    border: 2px solid #e5e7eb;
+    color: #4b5563;
+    transition: all 0.3s ease;
+}
+
+.tool-tag:hover {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    border-color: transparent;
+}
+
+/* Section Content */
+.section-content {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+/* Beginning Section */
+.beginning-section {
+    background: #f9fafb;
+    padding: 5rem 2.5rem;
+}
+
+.beginning-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #6b7280;
+}
+
+.struggles-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+}
+
+.struggles-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.struggles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.struggle-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.struggle-icon {
+    font-size: 1.5rem;
+}
+
+.struggle-content {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.struggle-content strong {
+    color: #1f2937;
+}
+
+.learning-approach {
+    background: linear-gradient(135deg, #fef3c7, #fed7aa);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.learning-approach h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.learning-sources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.source-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.source-icon {
+    font-size: 1.25rem;
+}
+
+/* Growth Section */
+.growth-section {
+    background: white;
+    padding: 5rem 2.5rem;
+}
+
+.growth-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #6b7280;
+}
+
+.challenges-overcome {
+    background: #fef2f2;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #ef4444;
+    margin-bottom: 2.5rem;
+}
+
+.challenge-card h3 {
+    color: #dc2626;
+    margin-bottom: 1rem;
+}
+
+.challenge-card ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.challenge-card li {
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-note {
+    color: #1f2937;
+    font-style: italic;
+}
+
+.lessons-learned h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.lesson-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #10b981;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.lesson-icon {
+    font-size: 1.25rem;
+    color: #10b981;
+}
+
+.lesson-content h4 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-content p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.battle-stories {
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.battle-quote {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: #4b5563;
+    text-align: center;
+    border-left: 4px solid #6b7280;
+    padding-left: 1.5rem;
+}
+
+/* Collaboration Section */
+.collaboration-section {
+    background: #f9fafb;
+    padding: 5rem 2.5rem;
+}
+
+.collaboration-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.collaboration-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #6b7280;
+}
+
+.transformation-highlight {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+}
+
+.transformation-highlight h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.before-after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.before, .after {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.before {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.after {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #6b7280;
+}
+
+.new-responsibilities h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.responsibilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.responsibility-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+.resp-icon {
+    font-size: 1.25rem;
+}
+
+.resp-text {
+    color: #4b5563;
+}
+
+.collaboration-quote {
+    background: linear-gradient(135deg, #dbeafe, #e0e7ff);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.collaboration-quote blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.ai-turning-point {
+    background: linear-gradient(135deg, #f3e8ff, #ddd6fe);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.ai-turning-point h3 {
+    color: #7c3aed;
+    margin-bottom: 1rem;
+}
+
+.ai-intro {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.ai-uses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ai-use-item {
+    color: #6b7280;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.25rem;
+}
+
+.ai-conclusion {
+    color: #7c3aed;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Learning Evolution Section */
+.learning-evolution-section {
+    background: white;
+    padding: 5rem 2.5rem;
+}
+
+.learning-evolution-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.evolution-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #6b7280;
+}
+
+.daily-activities h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.activity-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+}
+
+.activity-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.activity-content h4 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.activity-content p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.realization {
+    background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.realization-quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #047857;
+}
+
+/* Internal Battles Section */
+.battles-section {
+    background: #f9fafb;
+    padding: 5rem 2.5rem;
+}
+
+.battles-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.battles-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #6b7280;
+}
+
+.internal-struggles {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+}
+
+.struggle-phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.phase-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+}
+
+.phase-icon {
+    font-size: 1.25rem;
+}
+
+.phase-text {
+    color: #6b7280;
+}
+
+.breakthrough-moment {
+    background: linear-gradient(135deg, #fef3c7, #fed7aa);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.breakthrough-moment h3 {
+    color: #92400e;
+    margin-bottom: 1rem;
+}
+
+.breakthrough-text {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+.breakthrough-actions h4 {
+    color: #92400e;
+    margin-bottom: 1rem;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.action-bullet {
+    font-size: 1.25rem;
+}
+
+.action-text {
+    color: #4b5563;
+}
+
+/* Projects Section */
+.projects-section {
+    background: white;
+    padding: 5rem 2.5rem;
+}
+
+.projects-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.projects-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #6b7280;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 1.5rem;
+}
+
+.project-header h3 {
+    font-size: 1.125rem;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+/* Key Learnings Section */
+.key-learnings-section {
+    background: #f9fafb;
+    padding: 5rem 2.5rem;
+}
+
+.key-learnings-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.learnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.learning-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-4px);
+}
+
+.learning-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.learning-content h3 {
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+}
+
+.learning-content p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* What's Next Section */
+.whats-next-section {
+    background: white;
+    padding: 5rem 2.5rem;
+}
+
+.whats-next-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.next-goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.goal-category {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #0ea5e9;
+}
+
+.goal-category h3 {
+    color: #0369a1;
+    margin-bottom: 1rem;
+}
+
+.goals-list {
+    list-style: none;
+}
+
+.goals-list li {
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.goals-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #0ea5e9;
+}
+
+/* Final Reflection Section */
+.final-reflection-section {
+    background: linear-gradient(135deg, #fef3c7, #fed7aa, #fecaca);
+    padding: 5rem 2.5rem;
+    text-align: center;
+}
+
+.final-reflection-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.reflection-content {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.reflection-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.final-quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #dc2626;
+    border-left: 4px solid #dc2626;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.journey-continues {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Image Showcase */
+.image-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2.5rem;
+    background: white;
+}
+
+.showcase-image {
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .intro-title {
+    font-size: 2.25rem;
+  }
+  .tools-section h2,
+  .section-header h2,
+  .collaboration-section h2,
+  .learning-evolution-section h2,
+  .battles-section h2,
+  .projects-section h2,
+  .key-learnings-section h2,
+  .whats-next-section h2,
+  .final-reflection-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+  .tools-section h2,
+  .section-header h2,
+  .collaboration-section h2,
+  .learning-evolution-section h2,
+  .battles-section h2,
+  .projects-section h2,
+  .key-learnings-section h2,
+  .whats-next-section h2,
+  .final-reflection-section h2 {
+    font-size: 1.5rem;
+  }
+  .detail-card {
+    padding: 1.25rem;
+  }
+  .project-card, .learning-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 5vw;
+  }
+  .back-link {
+    order: 1;
+    margin-right: auto;
+  }
+  .live-site-link {
+    order: 2;
+  }
+  .intro-section, .hero-image-section, .beginning-section,
+  .growth-section, .collaboration-section, .learning-evolution-section,
+  .battles-section, .projects-section, .key-learnings-section,
+  .whats-next-section, .final-reflection-section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .image-showcase {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .intro-title {
+    font-size: 1.5rem;
+  }
+  .intro-subtitle {
+    font-size: 0.95rem;
+  }
+  .detail-card {
+    padding: 1rem;
+  }
+  .tools-section h2,
+  .section-header h2,
+  .collaboration-section h2,
+  .learning-evolution-section h2,
+  .battles-section h2,
+  .projects-section h2,
+  .key-learnings-section h2,
+  .whats-next-section h2,
+  .final-reflection-section h2 {
+    font-size: 1.15rem;
+  }
+  .project-header h3 {
+    font-size: 1rem;
+  }
+  .learning-content h3 {
+    font-size: 1rem;
+  }
+  .final-quote, .realization-quote {
+    font-size: 1rem;
+  }
+  .hero-image {
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 4vw;
+  }
+  .back-link {
+    order: 1;
+    margin-right: auto;
+  }
+  .live-site-link {
+    order: 2;
+  }
+  .intro-section, .hero-image-section, .beginning-section,
+  .growth-section, .collaboration-section, .learning-evolution-section,
+  .battles-section, .projects-section, .key-learnings-section,
+  .whats-next-section, .final-reflection-section {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .image-showcase {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .intro-title {
+    font-size: 1.1rem;
+  }
+  .intro-subtitle {
+    font-size: 0.8rem;
+  }
+  .detail-card {
+    padding: 0.75rem;
+  }
+  .tools-section h2,
+  .section-header h2,
+  .collaboration-section h2,
+  .learning-evolution-section h2,
+  .battles-section h2,
+  .projects-section h2,
+  .key-learnings-section h2,
+  .whats-next-section h2,
+  .final-reflection-section h2 {
+    font-size: 0.95rem;
+  }
+  .project-header h3 {
+    font-size: 0.85rem;
+  }
+  .learning-content h3 {
+    font-size: 0.85rem;
+  }
+  .final-quote, .realization-quote {
+    font-size: 0.85rem;
+  }
+  .hero-image {
+    border-radius: 0.25rem;
+  }
+}
