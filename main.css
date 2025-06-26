@@ -1173,12 +1173,19 @@ body {
   }
 }
 
+@media (max-width: 1025px) {
+  .id-card-container {
+    display: none;
+    
+  }
+}
+
 @media (max-width: 900px) {
   .sidebar {
     width: 100vw;
     height: auto;
     position: relative;
-    border-radius: 0 0 20px 20px;
+    border-radius: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     z-index: 20;
   }
@@ -1186,20 +1193,65 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 24px 16px;
-    gap: 24px;
+    padding: 1.5rem 1rem;
+            gap: 1rem;
     height: auto;
   }
   .profile-image {
-    margin-bottom: 0;
-    margin-right: 16px;
+    /* margin-bottom: 0;
+    margin-right: 16px; */
+    position: relative;
+            flex-shrink: 0;
   }
   .profile-name, .profile-title, .profile-location, .profile-experience {
     text-align: left;
     margin-bottom: 0;
   }
+  .profile-name {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-weight: 700;
+}
+.profile-title {
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  font-weight: 500;
+}
+.profile-location {
+  
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  font-weight: 500;
+  
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  
+}
+.location-item {
+  gap: 0.25rem;
+}
+.location-item svg {
+  width: clamp(0.8rem, 2vw, 1rem);
+  height: clamp(0.8rem, 2vw, 1rem);
+}
+
+.profile-experience {
+  /* width: 100%; */
+  max-width: 200px;
+  
+
+}
+experience-text {
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  font-weight: 500;
+  /* color: rgba(26, 26, 26, 0.6); */
+}
+
+
   .portfolio-btn {
     margin-left: auto;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            gap: 0.5rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 500;
   }
   .main-area {
     margin-left: 0;
@@ -1209,17 +1261,15 @@ body {
     flex-direction: column;
   }
   .id-card-container {
-    position: static;
-    margin: 0 auto 24px auto;
-    display: flex;
-    justify-content: center;
+    display: none;
+    
   }
   .id-card-image {
     width: 180px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 769px) {
   .sidebar {
     width: 100vw;
     min-width: 0;
@@ -1236,22 +1286,45 @@ body {
     height: 80px;
   }
   .profile-name {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
   }
-  .profile-title, .profile-location, .profile-experience {
+  /* .profile-title, .profile-location, .profile-experience {
     font-size: 12px;
+  } */
+     .profile-title {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
   }
+    .profile-location {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+   .profile-experience {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+
+    /* Center align the portfolio button */
+  .portfolio-btn {
+    margin: 16px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+  }
+  
   .main-area {
-    margin-left: 0;
+    /* margin: 0; */
+    margin: 0 auto;
     width: 100vw;
+    /* width: min(90%, 600px); */
   }
-  .header {
-    padding: 12px 8px;
-  }
-  .hero-section, .portfolio-section {
-    padding: 32px 8px;
-  }
+  
   .hero-title {
     font-size: 18px;
     line-height: 26px;
@@ -1284,6 +1357,24 @@ body {
     bottom: 12px;
     right: 12px;
   }
+
+  /* Hero section font sizes for tablet and smaller screens */
+   .hero-title {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .hero-text-bold {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .hero-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1294,57 +1385,87 @@ body {
     border-radius: 0;
     box-shadow: none;
   }
-  .sidebar-content {
-    padding: 12px 4px 4px 4px;
-    gap: 8px;
+  .hero-description{
+    margin-bottom: 0px;
   }
+  .scroll-down-container{
+    margin-top: 0rem;
+  }
+
+  .portfolio-section {
+    padding-top: 0rem;
+}
+  
   .profile-image img {
     width: 56px;
     height: 56px;
   }
-  .profile-name {
+  /* .profile-name {
     font-size: 15px;
     line-height: 18px;
+  } */
+    .profile-name {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
   }
-  .main-area {
-    margin-left: 0;
-    width: 100vw;
+    .profile-title {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
   }
-  .header {
-    padding: 8px 4px;
+   .profile-location {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
   }
+  .profile-experience {
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+ 
   .header-title {
     font-size: 16px;
   }
-  .hero-section, .portfolio-section {
-    padding: 16px 4px;
-  }
-  .hero-title {
+  
+  /* .hero-title {
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 6px;
-  }
-  .hero-text, .hero-text-bold {
+  } */
+  /* .hero-text, .hero-text-bold {
     font-size: 9px;
     line-height: 12px;
-  }
+  } */
   .section-title {
     font-size: 13px;
   }
   .section-description {
     font-size: 9px;
   }
-  .profile-name {
-    font-size: 11px;
-    line-height: 14px;
-  }
-  .profile-title, .profile-location, .profile-experience {
+ 
+  /* .profile-title, .profile-location, .profile-experience {
     font-size: 8px;
-  }
+  } */
   .id-card-container {
     display: none !important;
   }
   .portfolio-btn {
     display: none !important;
+  }
+
+    .portfolio-header {
+    margin-bottom: 32px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .section-description {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 100%;
   }
 }

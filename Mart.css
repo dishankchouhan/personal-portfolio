@@ -52,16 +52,7 @@ body {
 .live-site-link {
   display: flex;
   align-items: center;
-  /* background: #667eea; */
-  background: linear-gradient(
-    to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-  );
+  background: #EB5D47;
   color: white;
   padding: 10px 20px;
   border-radius: 25px;
@@ -89,7 +80,11 @@ body {
   padding: 80px 40px;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
   /* background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
- background: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+  /* background: #F18E7E; */
+  background: #e96443;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: white;
 }
 
@@ -270,7 +265,7 @@ body {
 .collaboration-title {
   font-size: 1.8rem;
   font-weight: 600;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #ff8177 0%,
     #ff867a 0%,
@@ -278,7 +273,7 @@ body {
     #f99185 52%,
     #cf556c 78%,
     #b12a5b 100%
-  );
+  ); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
@@ -388,7 +383,8 @@ body {
 }
 
 .process-step-header {
-  background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+  /* background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%); */
+  background: linear-gradient(to right, rgb(221 143 123), rgb(182 142 186));
   color: white;
   padding: 30px 40px;
   display: flex;
@@ -489,6 +485,7 @@ body {
   /* margin-bottom: 20px; */
   flex-direction: row;
   gap: 30%;
+  flex-wrap: wrap;
 }
 
 /* Tables */
@@ -512,7 +509,7 @@ body {
 
 .collaboration-table th,
 .outcomes-table th {
-  background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+  background: linear-gradient(to right, rgb(221 143 123), rgb(182 142 186));
   color: white;
   padding: 20px;
   text-align: left;
@@ -588,7 +585,7 @@ body {
 }
 
 .image-showcase .image-placeholder {
-  height: 250px;
+  height: auto;
   font-size: 1.1rem;
 }
 

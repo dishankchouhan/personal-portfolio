@@ -1049,7 +1049,7 @@ body {
     justify-content: flex-start !important;
     align-items: center;
     gap: 0.25rem;
-    padding: 0.25rem 4vw;
+    padding: 40px 20px;
   }
   .back-link {
     order: 1;
