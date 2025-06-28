@@ -51,10 +51,10 @@ window.addEventListener("resize", setupCanvas);
 setupCanvas();
 
 function update(t) {
-    // for intro motion
+    // Keep the cursor stable in the center until the user moves the mouse
     if (!mouseMoved) {
-        pointer.x = (.5 + .3 * Math.cos(.002 * t) * (Math.sin(.005 * t))) * window.innerWidth;
-        pointer.y = (.5 + .2 * (Math.cos(.005 * t)) + .1 * Math.cos(.01 * t)) * window.innerHeight;
+        pointer.x = window.innerWidth / 2;
+        pointer.y = window.innerHeight / 2;
     }
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -73,8 +73,7 @@ function update(t) {
     ctx.beginPath();
     ctx.moveTo(trail[0].x, trail[0].y);
 
-
-     ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--cursor-color').trim() || "black";
+    ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--cursor-color').trim() || "black";
 
     for (let i = 1; i < trail.length - 1; i++) {
         const xc = .5 * (trail[i].x + trail[i + 1].x);
