@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Toast Container */
 .toast-container {
   position: fixed;
@@ -1468,4 +1469,25 @@ experience-text {
     line-height: 16px;
     max-width: 100%;
   }
+}
+
+
+/* Cursor Animation Styles */
+
+#cursor-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+   width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+html, body {
+  overscroll-behavior: none;
+}
+
+:root {
+  --cursor-color: #527b7b; /* default color */
 }

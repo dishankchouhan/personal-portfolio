@@ -949,3 +949,21 @@ body {
     }
     
 }
+
+
+#cursor-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none;
+  z-index: 99999;
+}
+html, body {
+  overscroll-behavior: none;
+}
+
+:root {
+  --cursor-color: #667eea; /* default color */
+}
