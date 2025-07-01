@@ -23,7 +23,7 @@ body {
   background: white;
   padding: 20px 40px;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
