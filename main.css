@@ -6,13 +6,12 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
   background-color: #eff3f3;
   color: #181818;
   overflow-x: hidden;
 }
-
 
 /* Toast Container */
 .toast-container {
@@ -117,9 +116,11 @@ body {
 }
 
 .modal-header {
-  background: linear-gradient(135deg,
-      rgba(61, 8, 123, 0.05) 0%,
-      rgba(61, 8, 123, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(61, 8, 123, 0.05) 0%,
+    rgba(61, 8, 123, 0.1) 100%
+  );
   padding: 24px;
   border-bottom: 1px solid #f3f3f3;
   position: relative;
@@ -340,7 +341,6 @@ body {
 }
 
 @media (min-width: 640px) {
-
   .form-group input,
   .form-group textarea {
     padding: 16px;
@@ -725,10 +725,7 @@ body {
 .btn-bg-glow {
   position: absolute;
   inset: -4px;
-  background: linear-gradient(45deg,
-      #64748b 0%,
-      #374151 50%,
-      #1f2937 100%);
+  background: linear-gradient(45deg, #64748b 0%, #374151 50%, #1f2937 100%);
   border-radius: 12px;
   opacity: 0;
   filter: blur(8px);
@@ -742,10 +739,7 @@ body {
 .btn-animated-border {
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg,
-      #9ca3af 0%,
-      #64748b 50%,
-      #4b5563 100%);
+  background: linear-gradient(45deg, #9ca3af 0%, #64748b 50%, #4b5563 100%);
   border-radius: 8px;
   opacity: 0;
   padding: 1px;
@@ -766,10 +760,7 @@ body {
 .btn-animated-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg,
-      #374151 0%,
-      #1f2937 50%,
-      #111827 100%);
+  background: linear-gradient(45deg, #374151 0%, #1f2937 50%, #111827 100%);
   transform: translateX(-100%);
   transition: transform 0.7s ease-out;
 }
@@ -781,10 +772,12 @@ body {
 .btn-shimmer {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg,
-      transparent 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
   transform: translateX(-100%);
   transition: transform 1s ease-out 0.2s;
 }
@@ -907,95 +900,114 @@ body {
 }
 
 /* new */
-.project-card-one, .project-card-two, .project-card-three, .project-card-four {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 20px;
-            overflow: hidden;
-            transition: transform 0.1s ease-out;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            transform-style: preserve-3d;
-            cursor: pointer;
-        }
+.project-card-one,
+.project-card-two,
+.project-card-three,
+.project-card-four,
+.project-card-five {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.1s ease-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
 
-        .project-card-one {
+/* .project-card-one {
             background-image: url('Assets/B2B\ ecommerce.webp');
-        }
+        } */
 
-        .project-card-two {
-            background-image: url('Assets/Design\ System.webp');
-        }
+.project-card-two {
+  background-image: url("Assets/Design\ System.webp");
+}
 
-        .project-card-three {
-            background-image: url('Assets/ERP\ redesign.webp');
-        }
+.project-card-three {
+  background-image: url("Assets/ERP\ redesign.webp");
+}
 
-        .project-card-four {
-            background-image: url('Assets/Design\ journey.webp');
-        }
+.project-card-four {
+  background-image: url("Assets/Post\ 1080x1080.png");
+}
 
-         .project-card-one::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to top,
-                rgba(194, 65, 12, 0.6) 0%,
-                rgba(239, 68, 68, 0.5) 30%,
-                rgba(30, 41, 59, 0.7) 100%
-            );
-            transition: opacity 0.4s ease;
-        }
+.project-card-five {
+  background-image: url("Assets/Design\ journey.webp");
+}
 
-        .project-card-two::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to top,
-                rgba(6, 95, 70, 0.6) 0%,
-                rgba(20, 184, 166, 0.5) 30%,
-                rgba(30, 41, 59, 0.7) 100%
-            );
-            transition: opacity 0.4s ease;
-        }
+.project-card-one::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(194, 65, 12, 0.6) 0%,
+    rgba(239, 68, 68, 0.5) 30%,
+    rgba(30, 41, 59, 0.7) 100%
+  );
+  transition: opacity 0.4s ease;
+}
 
-        .project-card-three::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to top,
-                rgba(67, 56, 202, 0.7) 0%,
-                rgba(79, 70, 229, 0.6) 20%,
-                rgba(30, 41, 59, 0.8) 100%
-            );
-            transition: opacity 0.4s ease;
-        }
+.project-card-two::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(6, 95, 70, 0.6) 0%,
+    rgba(20, 184, 166, 0.5) 30%,
+    rgba(30, 41, 59, 0.7) 100%
+  );
+  transition: opacity 0.4s ease;
+}
 
-        .project-card-four::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to top,
-                rgba(30, 58, 138, 0.6) 0%,
-                rgba(14, 165, 233, 0.5) 30%,
-                rgba(30, 41, 59, 0.7) 100%
-            );
-            transition: opacity 0.4s ease;
-        }
+.project-card-three::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(67, 56, 202, 0.7) 0%,
+    rgba(79, 70, 229, 0.6) 20%,
+    rgba(30, 41, 59, 0.8) 100%
+  );
+  transition: opacity 0.4s ease;
+}
 
+.project-card-four::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(30, 58, 138, 0.6) 0%,
+    rgba(14, 165, 233, 0.5) 30%,
+    rgba(30, 41, 59, 0.7) 100%
+  );
+  transition: opacity 0.4s ease;
+}
+
+.project-card-five::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(120, 85, 0, 0.6) 0%,
+    rgba(255, 215, 0, 0.5) 40%,
+    rgba(255, 239, 184, 0.8) 100%
+  );
+  transition: opacity 0.4s ease;
+}
 
 .project-card-one-link {
-            text-decoration: none;
-            display: block;
-            /* height: 300px; */
-        }
-
+  text-decoration: none;
+  display: block;
+  /* height: 300px; */
+}
 
 .card-content {
   position: absolute;
@@ -1061,8 +1073,6 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   /* outside border */
   border: 1px solid rgba(255, 255, 255, 0.8);
-  
-  
 }
 
 .project-card-one:hover .arrow-button span,
@@ -1123,7 +1133,7 @@ body {
 
 .chevron:before,
 .chevron:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 0;
   height: 100%;
@@ -1178,7 +1188,6 @@ body {
 @media (max-width: 1025px) {
   .id-card-container {
     display: none;
-    
   }
 }
 
@@ -1188,7 +1197,7 @@ body {
     height: auto;
     position: relative;
     border-radius: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     z-index: 20;
   }
   .sidebar-content {
@@ -1196,64 +1205,62 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding: 1.5rem 1rem;
-            gap: 1rem;
+    gap: 1rem;
     height: auto;
   }
   .profile-image {
     /* margin-bottom: 0;
     margin-right: 16px; */
     position: relative;
-            flex-shrink: 0;
+    flex-shrink: 0;
   }
-  .profile-name, .profile-title, .profile-location, .profile-experience {
+  .profile-name,
+  .profile-title,
+  .profile-location,
+  .profile-experience {
     text-align: left;
     margin-bottom: 0;
   }
   .profile-name {
     font-size: clamp(1.2rem, 4vw, 1.5rem);
     font-weight: 700;
-}
-.profile-title {
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-  font-weight: 500;
-}
-.profile-location {
-  
-  font-size: clamp(0.7rem, 2vw, 0.85rem);
-  font-weight: 500;
-  
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  
-}
-.location-item {
-  gap: 0.25rem;
-}
-.location-item svg {
-  width: clamp(0.8rem, 2vw, 1rem);
-  height: clamp(0.8rem, 2vw, 1rem);
-}
+  }
+  .profile-title {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    font-weight: 500;
+  }
+  .profile-location {
+    font-size: clamp(0.7rem, 2vw, 0.85rem);
+    font-weight: 500;
 
-.profile-experience {
-  /* width: 100%; */
-  max-width: 200px;
-  
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .location-item {
+    gap: 0.25rem;
+  }
+  .location-item svg {
+    width: clamp(0.8rem, 2vw, 1rem);
+    height: clamp(0.8rem, 2vw, 1rem);
+  }
 
-}
-experience-text {
-  font-size: clamp(0.7rem, 2vw, 0.85rem);
-  font-weight: 500;
-  /* color: rgba(26, 26, 26, 0.6); */
-}
-
+  .profile-experience {
+    /* width: 100%; */
+    max-width: 200px;
+  }
+  experience-text {
+    font-size: clamp(0.7rem, 2vw, 0.85rem);
+    font-weight: 500;
+    /* color: rgba(26, 26, 26, 0.6); */
+  }
 
   .portfolio-btn {
     margin-left: auto;
-            padding: 0.5rem 1.5rem;
-            border-radius: 2rem;
-            gap: 0.5rem;
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    gap: 0.5rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    font-weight: 500;
   }
   .main-area {
     margin-left: 0;
@@ -1264,7 +1271,6 @@ experience-text {
   }
   .id-card-container {
     display: none;
-    
   }
   .id-card-image {
     width: 180px;
@@ -1272,12 +1278,11 @@ experience-text {
 }
 
 @media (max-width: 769px) {
-
   .header-content {
-  /* display: flex; */
-  justify-content: center;
-  /* align-items: center; */
-}
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+  }
   .sidebar {
     width: 100vw;
     min-width: 0;
@@ -1301,23 +1306,23 @@ experience-text {
   /* .profile-title, .profile-location, .profile-experience {
     font-size: 12px;
   } */
-     .profile-title {
+  .profile-title {
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
   }
-    .profile-location {
+  .profile-location {
     font-size: 13px;
     line-height: 18px;
     font-weight: 500;
   }
-   .profile-experience {
+  .profile-experience {
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
   }
 
-    /* Center align the portfolio button */
+  /* Center align the portfolio button */
   .portfolio-btn {
     margin: 16px auto 0 auto;
     display: flex;
@@ -1325,20 +1330,21 @@ experience-text {
     align-items: center;
     float: none;
   }
-  
+
   .main-area {
     /* margin: 0; */
     margin: 0 auto;
     width: 100vw;
     /* width: min(90%, 600px); */
   }
-  
+
   .hero-title {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 10px;
   }
-  .hero-text, .hero-text-bold {
+  .hero-text,
+  .hero-text-bold {
     font-size: 12px;
     line-height: 16px;
   }
@@ -1349,7 +1355,10 @@ experience-text {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .project-card-one, .project-card-two, .project-card-three, .project-card-four {
+  .project-card-one,
+  .project-card-two,
+  .project-card-three,
+  .project-card-four {
     height: 200px;
   }
   .card-content h2 {
@@ -1367,7 +1376,7 @@ experience-text {
   }
 
   /* Hero section font sizes for tablet and smaller screens */
-   .hero-title {
+  .hero-title {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 10px;
@@ -1393,17 +1402,17 @@ experience-text {
     border-radius: 0;
     box-shadow: none;
   }
-  .hero-description{
+  .hero-description {
     margin-bottom: 0px;
   }
-  .scroll-down-container{
+  .scroll-down-container {
     margin-top: 0rem;
   }
 
   .portfolio-section {
     padding-top: 0rem;
-}
-  
+  }
+
   .profile-image img {
     width: 56px;
     height: 56px;
@@ -1412,17 +1421,17 @@ experience-text {
     font-size: 15px;
     line-height: 18px;
   } */
-    .profile-name {
+  .profile-name {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
   }
-    .profile-title {
+  .profile-title {
     font-size: 13px;
     line-height: 16px;
     font-weight: 500;
   }
-   .profile-location {
+  .profile-location {
     font-size: 12px;
     line-height: 15px;
     font-weight: 500;
@@ -1432,11 +1441,11 @@ experience-text {
     line-height: 14px;
     font-weight: 500;
   }
- 
+
   .header-title {
     font-size: 16px;
   }
-  
+
   /* .hero-title {
     font-size: 13px;
     line-height: 16px;
@@ -1452,7 +1461,7 @@ experience-text {
   .section-description {
     font-size: 9px;
   }
- 
+
   /* .profile-title, .profile-location, .profile-experience {
     font-size: 8px;
   } */
@@ -1463,7 +1472,7 @@ experience-text {
     display: none !important;
   }
 
-    .portfolio-header {
+  .portfolio-header {
     margin-bottom: 32px;
   }
   .section-title {
@@ -1478,20 +1487,20 @@ experience-text {
   }
 }
 
-
 /* Cursor Animation Styles */
 
 #cursor-canvas {
   position: fixed;
   left: 0;
   top: 0;
-   width: 100vw !important;
+  width: 100vw !important;
   height: 100vh !important;
   pointer-events: none;
   z-index: 999999;
 }
 
-html, body {
+html,
+body {
   overscroll-behavior: none;
 }
 
