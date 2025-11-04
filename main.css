@@ -904,7 +904,8 @@ body {
 .project-card-two,
 .project-card-three,
 .project-card-four,
-.project-card-five {
+.project-card-five,
+.project-card-six {
   position: relative;
   width: 100%;
   height: 300px;
@@ -935,7 +936,10 @@ body {
 }
 
 .project-card-five {
-  background-image: url("Assets/Design\ journey.webp");
+  background-image: url("Assets/Kirpa-mockup.png");
+}
+.project-card-six {
+  background-image: url("Assets/Frame\ 1.png");
 }
 
 .project-card-one::after {
@@ -995,14 +999,26 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to top,
-    rgba(120, 85, 0, 0.6) 0%,
-    rgba(255, 215, 0, 0.5) 40%,
-    rgba(255, 239, 184, 0.8) 100%
-  );
+  to top,
+  rgba(64, 42, 18, 0.5) 0%,
+  rgba(102, 72, 38, 0.4) 40%,
+  rgba(153, 115, 76, 0.4) 100%
+);
   transition: opacity 0.4s ease;
 }
 
+.project-card-six::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+  to top,
+  rgba(64, 42, 18, 0.4) 0%,
+  rgba(102, 72, 38, 0.4) 40%,
+  rgba(153, 115, 76, 0.2) 100%
+);
+  transition: opacity 0.4s ease;
+}
 .project-card-one-link {
   text-decoration: none;
   display: block;
