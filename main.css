@@ -1094,7 +1094,9 @@ body {
 .project-card-one:hover .arrow-button span,
 .project-card-two:hover .arrow-button span,
 .project-card-three:hover .arrow-button span,
-.project-card-four:hover .arrow-button span {
+.project-card-four:hover .arrow-button span,
+.project-card-five:hover .arrow-button span,
+.project-card-six:hover .arrow-button span {
   transform: rotate(45deg);
 }
 
